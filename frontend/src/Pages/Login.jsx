@@ -6,8 +6,8 @@ const { contentContainer, welcomeTitle, welcomeContainer, companyDescription, bu
 const SignUp = () => {
     const navigate = useNavigate();
 
-    const handleLogin = () => {
-        navigate('/login'); 
+    const handleSignUp = () => {
+        navigate('/signup'); 
     };
     const handleSubmit = (event) => {
         event.preventDefault(); 
@@ -28,12 +28,12 @@ const SignUp = () => {
                 <div className={formContainer}>
                     <form onSubmit={handleSubmit}>
                         <input className={inputField} type="text" placeholder="Username" required />
-                        <input className={inputField} type="password" placeholder="Password" required />
+                        <input className={inputField} type="password" placeholder="Password" required /><br/>
                         <button className={submitButton} type="submit">Submit</button>
                     </form>
                 </div>
                 <div className={buttonsContainer}>
-                    <button className={loginButton} onClick={handleLogin}>New User? SIGN UP</button>
+                    <button className={loginButton} onClick={handleSignUp}>New User? SIGN UP</button>
                 </div>
             </div>
         </div>

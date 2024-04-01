@@ -27,11 +27,11 @@
    .contentContainer::before {
     content: "";
     position: absolute;
-    top: 5rem;
+    top: 15rem;
     left: 27vw;
-    bottom: 10vh;
+    bottom: 18vh;
     width: 45%;
-    height: 65%;
+    height: 75%;
     backdrop-filter: blur(10px); 
     z-index: 1;
    }
@@ -126,7 +126,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 15%;
     transition: background-color 0.3s ease;
 }
 
