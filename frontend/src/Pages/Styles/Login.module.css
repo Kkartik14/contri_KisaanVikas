@@ -1,0 +1,135 @@
+.welcomeContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+   }
+   
+   .backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   
+   .contentContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+   }
+   
+   .contentContainer::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 27vw;
+    bottom: 10vh;
+    width: 45%;
+    height: 65%;
+    backdrop-filter: blur(10px); 
+    z-index: 1;
+   }
+   
+   .welcomeTitle {
+    color: green;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    z-index: 2;
+   }
+   
+   .companyDescription {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    z-index: 2;
+   }
+   
+   .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+   }
+   
+   
+   .loginButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   
+   .loginButton:hover {
+    background-color: #0056b3;
+   }
+   
+   .signupButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   
+   .signupButton:hover {
+    background-color: #218838;
+   }
+   .selectField {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.inputField {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.inputField, .selectField {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #006400; 
+    background-color: #90ee90; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.submitButton {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #ff0040;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15%;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

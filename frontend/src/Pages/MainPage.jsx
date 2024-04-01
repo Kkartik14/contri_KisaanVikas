@@ -1,12 +1,14 @@
-import React from 'react'
-import TurningPage from '../Components/TurningPage'
-const MainPage = () => {
-  return (
-    <div>
-      <TurningPage />
-      
-    </div>
-  )
-}
+import React from 'react';
+import TurningPage from '../Components/TurningPage';
+import Navbar from '../Components/Navbar'; 
 
-export default MainPage
+const MainPage = () => {
+ return (
+    <div>
+      <Navbar /> 
+      <TurningPage />
+    </div>
+ );
+};
+
+export default MainPage;
