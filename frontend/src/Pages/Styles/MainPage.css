@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 .main-page {
     background-color: #44CD71;
     display: block;
     width: 100vw;
     justify-content: flex-start; 
     flex-direction: column; 
+    overflow-x: hidden;
 }
 
 .content-container {
@@ -106,6 +110,18 @@
     font-size: 18px;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
 
+    .turning-page-container, .description-container {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        margin-left: 10px;
+    }
+}
 
 
