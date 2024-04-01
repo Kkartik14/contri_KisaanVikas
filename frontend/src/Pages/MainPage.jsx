@@ -10,12 +10,9 @@ class MainPage extends React.Component {
         <div className="container">
 
           <h1 className="title">
-            Turning pages<br />with css
+            Turning pages<br />
           </h1>
 
-          <div className="credit">
-            * Images loaded randomly from Picsum.photos
-          </div>
 
           <div className="book">
             <div className="gap"></div>
