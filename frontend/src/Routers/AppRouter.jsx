@@ -4,6 +4,7 @@ import MainPage from '../Pages/MainPage';
 import HomePage from '../Pages/HomePage';
 import Login from '../Pages/Login';
 import SignUp from '../Pages/SignUp';
+import PlantHealth from '../Pages/PlantHealth';
 function App() {
  return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Home" element={<MainPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/planthealth" element={<PlantHealth />} />
 
       </Routes>
     </Router>

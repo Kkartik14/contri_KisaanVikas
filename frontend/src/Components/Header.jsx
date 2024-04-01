@@ -1,10 +1,19 @@
 import React from 'react';
-import './Header.css';
+import styles from './Styles/Header.css';
+
+const { HeaderDiv, videoHeader } = styles;
+
 const Header = ({ videoSrc }) => {
  return (
-    <header className="header">
-      <video src={process.env.PUBLIC_URL + videoSrc} autoPlay muted loop className="headerVideo" />
-    </header>
+    <div className={HeaderDiv}>
+      <video
+        className={videoHeader}
+        autoPlay
+        muted
+        loop
+        src={videoSrc}
+      />
+    </div>
  );
 };
 

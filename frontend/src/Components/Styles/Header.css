@@ -1,22 +1,29 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f9fa; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease; 
+.HeaderDiv {
+   position: relative;
+   width: 90vw;
+   max-width: 90%;
+   max-height: 30rem; 
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .videoHeader {
+   width: 100px;
+   height: 20px;
+   object-fit: cover;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+   .HeaderDiv {
+      height: 20rem; 
    }
-   
-   .header-video {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-   }
-   
-   @media (max-width: 768px) {
-    .header {
-       height: 70vh;
-    }
-   }
-   
+  }
+  
+  @media screen and (max-width: 500px) {
+   .HeaderDiv {
+      height: 15rem; 
+  }
+}
