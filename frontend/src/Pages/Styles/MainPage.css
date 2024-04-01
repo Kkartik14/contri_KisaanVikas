@@ -1,0 +1,35 @@
+.main-page {
+    background-color: #44CD71;
+    display: block;
+    width: 100vw;
+    justify-content: flex-start; 
+    flex-direction: column; 
+}
+
+.turning-page-container {
+    width: 100%; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2DAB24 ;
+    color: #15191D;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-links a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
