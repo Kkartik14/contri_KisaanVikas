@@ -1,80 +1,89 @@
-.mainDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  min-height: 100vh;
-  width: 100%;
+.welcomeContainer {
   position: relative;
-}
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ }
  
-.content {
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.background {
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
-.circle {
-  border-radius: 50%;
-  width: 100%;
-  height: 75%;
-}
-
-.Login {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: 900;
-  font-style: italic;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  &:hover {
-    background-color: var(--hacktextDark);
-    box-shadow: 0 0 1px 1px var(--hackbuttonShadow);
-    transition: all 0.3s;
-  }
-}
-
-.earthVideo {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  width: 100%;
-  height: 75%;
-  z-index: 0;
-}
-
-.earthVideo::after {
-  content: "";
+ .backgroundVideo {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--hackneonHighlight);
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .earthVideo {
-    width: 175dvw;
-    left: -37.5dvw;
-  }
-
-  #contentHeading {
-    font-size: 2rem;
-  }
-}
+  object-fit: cover;
+ }
+ 
+ .contentContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 2;
+ }
+ 
+ .contentContainer::before {
+  content: "";
+  position: absolute;
+  top: 15rem;
+  left: 23rem;
+  bottom: 10vh;
+  width: 45%;
+  height: 40%;
+  backdrop-filter: blur(10px); 
+  z-index: 1;
+ }
+ 
+ .welcomeTitle {
+  color: green;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  z-index: 2;
+ }
+ 
+ .companyDescription {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+  z-index: 2;
+ }
+ 
+ .buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+ }
+ 
+ 
+ .loginButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .loginButton:hover {
+  background-color: #0056b3;
+ }
+ 
+ .signupButton {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .signupButton:hover {
+  background-color: #218838;
+ }

@@ -1,31 +1,36 @@
-import { Link } from "react-router-dom";
 import styles from "./Styles/HomePage.module.css";
+import { useNavigate } from 'react-router-dom';
 
-const { mainDiv, content, Login, contentHeading, earthVideo } = styles;
+const { contentContainer, welcomeTitle, welcomeContainer, companyDescription, buttonsContainer,loginButton, signupButton,backgroundVideo} = styles;
 
 const HomePage = () => {
-  return (
-    <div className={mainDiv}>
-      <div className={content}>
-        <h1 className="heading" id={contentHeading}>
-          Krishi Unnati <br />
-          feyhdwiockfjvnhbfyeru8i09okf j
-        </h1>
-        <Link to={"/register"}>
-          <button className={Login}>Login Now|</button>
-        </Link>
-      </div>
-
-      <video
-        height="300dvh"
-        autoPlay
-        muted
-        loop
-        src="/earth.webm"
-        className={earthVideo}
-      ></video>
-    </div>
-  );
-};
+    const navigate = useNavigate();
+       const handleLogin = () => {
+       navigate('/login'); 
+    };
+   
+    const handleSignUp = () => {
+       navigate('/signup');
+    };
+   
+    return (
+       <div className={welcomeContainer}>
+         <video autoPlay muted loop className={backgroundVideo}>
+           <source src="/LoginPage.mp4" type="video/mp4" />
+         </video>
+         <div className={contentContainer}>
+           <h1 className={welcomeTitle}>WELCOME TO KRISHI UNNATI</h1>
+           <p className={companyDescription}>
+             YOUR AGRO AGRO AGRO AGRO DESCRIPTION OF COMPANY
+           </p>
+           <div className={buttonsContainer}>
+             <button className={loginButton} onClick={handleLogin}>LOGIN</button>
+             <button className={signupButton} onClick={handleSignUp}>SIGN UP</button>
+           </div>
+         </div>
+       </div>
+    );
+   };
+   
 
 export default HomePage;
