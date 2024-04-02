@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { XYPlot, LineSeries, XAxis, YAxis, VerticalGridLines, HorizontalGridLines } from 'react-vis';
 import 'react-vis/dist/style.css';
 import './Styles/WeatherComponent.css';
+import Header from '../Components/Header';
 
 const WeatherComponent = () => {
     const [weatherData, setWeatherData] = useState(null);
@@ -50,7 +51,7 @@ const WeatherComponent = () => {
         });
     
         return (
-            <div className="forecast-container" style={{ background: '#44CD71' }}>
+            <div className="forecast-container" style={{ background: '#35AD87' }}>
                 {Object.keys(forecastsByDay).map(date => {
                     const forecast = forecastsByDay[date];
                     const temperature = Math.round(forecast.main.temp - 273.15);
@@ -107,7 +108,7 @@ const WeatherComponent = () => {
         }));
     
         return (
-            <div className="line-graph-container" style={{ background: '#44CD71', border: '2px solid #3AA355' }}>
+            <div className="line-graph-container" style={{ background: '#35AD87', border: '2px solid #3AA355' }}>
                 <h2 style={{ color: '#000' }}>Upcoming Weather</h2>
                 <XYPlot xType="time" width={800} height={400} margin={{ left: 80, right: 80, top: 40, bottom: 60 }}>
                     <VerticalGridLines />
@@ -136,12 +137,13 @@ const WeatherComponent = () => {
     
 
     return (
-        <div>
-            <h1>Weather Forecast</h1>
+        <div style={{ backgroundColor: '#35AD87', minHeight: '100vh' }}>
+            <Header videoSrc="./ClimateResilienceHeader.mp4" />
             {getWeatherForecast()}
             <div style={{ marginTop: '20px' }}>{getLineGraph()}</div>
         </div>
     );
+    
 };
 
 export default WeatherComponent;
