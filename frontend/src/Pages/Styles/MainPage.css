@@ -9,7 +9,21 @@
     flex-direction: column; 
     overflow-x: hidden;
 }
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+   }
+   .custom-card {
+    box-shadow: 0 0 10px rgba(45, 170, 36, 0.5);
+    transition: background-color 0.3s ease; 
+}
 
+.custom-card:hover {
+    background-color: #4f6df3;
+}
+   
 .content-container {
     display: flex;
     justify-content: space-between;
