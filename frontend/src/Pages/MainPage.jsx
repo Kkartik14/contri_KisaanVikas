@@ -1,6 +1,7 @@
 import React from 'react';
 import TurningPage from '../Components/TurningPage';
 import './Styles/MainPage.css';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   return (
@@ -38,10 +39,13 @@ const MainPage = () => {
  backgroundColor: '#3A8FD5'
 }}>EXPLORE US</h2>
 
-  <div id="here" className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease'}}>
+
+<div id="here" className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease'}}>
  <div className="row g-0">
     <div className="col-md-4">
+    <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>
       <img src="Card1.png" className="img-fluid rounded-start" alt="..."/>
+    </Link>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -55,7 +59,9 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
+    <Link to="/planthealth2" style={{ textDecoration: 'none', color: 'inherit' }}>
       <img src="Card2.png" className="img-fluid rounded-start" alt="..."/>
+      </Link>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -69,7 +75,9 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
+    <Link to="/weather" style={{ textDecoration: 'none', color: 'inherit' }}>
       <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
+      </Link>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -142,7 +150,9 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px  rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
+    <Link to="/info" style={{ textDecoration: 'none', color: 'inherit' }}>
       <img src="Card1.png" className="img-fluid rounded-start" alt="..."/>
+    </Link>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -156,7 +166,9 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
+    <Link to="/info" style={{ textDecoration: 'none', color: 'inherit' }}>
       <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
+      </Link>
     </div>
     <div className="col-md-8">
       <div className="card-body">

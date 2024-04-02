@@ -20,7 +20,7 @@ function App() {
         <Route path="/planthealth" element={<PlantHealth />} />
         <Route path="/planthealth2" element={<ExternalRedirect url="http://127.0.0.1:5000/" />} />
         <Route path="/weather" element={<WeatherComponent />} />
-        <Route path="/Info" element={<InfoForum />} />
+        <Route path="/info" element={<InfoForum />} />
 
       </Routes>
     </Router>
