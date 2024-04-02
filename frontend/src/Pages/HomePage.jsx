@@ -31,7 +31,7 @@ const HomePage = () => {
         <h1 style={{fontWeight: 'bold'}} className={welcomeTitle}>Welcome to Kisan Vikaas</h1>
         <p style={{marginLeft: '60px', marginRight: '60px', padding: '20px', fontWeight: 'bold'}} className={companyDescription}>
           Kisaan Vikas, meaning "Farmer Progress" in Hindi, is your one-stop
-          mobile app for a thriving farm. Diagnose plant diseases early, get
+          application for a thriving farm. Diagnose plant diseases early, get
           weather forecasts and alerts, manage crop insurance, learn about
           government schemes, and access educational resources - all in one
           place. Kisaan Vikas works even with low connectivity and offers
