@@ -11,7 +11,7 @@ const MainPage = () => {
         </div>
         <div className="navbar-links">
           <a href="#home">Home</a>
-          <a href="#explore">Explore us</a>
+          <a href="#here">Explore us</a>
           <a href="/info">Information forum</a>
         </div>
       </nav>
@@ -21,17 +21,24 @@ const MainPage = () => {
         </div>
         <div className="description-container">
           <h2><span>WELCOME TO </span><span className="green-text">KISAAN VIKAS</span></h2>
-          <h3><span className="tagline-text">TAGLINE TAGLINE WELCOME TO KISAAN VIKAS</span></h3>
+          <h3><span className="tagline-text">HARVESTING EASE, PLANTING PROSPERITY</span></h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros
+          At Kisaan Vikas, we're not just about farming; we're about revolutionizing it. We understand the challenges and uncertainties that farmers face daily. That's why we've dedicated ourselves to empowering them with the tools, knowledge, and support they need to not only overcome these challenges but to thrive. Our platform is a testament to our belief that with the right resources, farming can be both profitable and sustainable. We're bringing the latest in precision agriculture, crop health management, and financial solutions directly to the hands that feed us. From advanced soil monitoring technologies to decentralized crop insurance and agri-fintech solutions, we're ensuring that our farmers are equipped for whatever lies ahead.
           </p>
         </div>
       </div>
 
-      <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease'}}>
+<h2 style={{
+ textAlign: 'center',
+ marginBottom: '20px',
+ fontSize: '32px',
+ border: '2px solid #000',
+ boxShadow: '0 0 10px rgba(0,0,0,0.5)',
+ animation: 'shake 4s infinite',
+ backgroundColor: '#3A8FD5'
+}}>EXPLORE US</h2>
+
+  <div id="here" className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease'}}>
  <div className="row g-0">
     <div className="col-md-4">
       <img src="Card1.png" className="img-fluid rounded-start" alt="..."/>
@@ -48,7 +55,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card2.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -59,11 +66,10 @@ const MainPage = () => {
  </div>
 </div>
 
-
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -78,7 +84,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card4.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -93,7 +99,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card5.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -108,7 +114,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card6.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -122,7 +128,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card2.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -136,7 +142,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginRight: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px  rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card1.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -150,7 +156,7 @@ const MainPage = () => {
 <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
