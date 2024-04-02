@@ -67,17 +67,17 @@ const SignUp = () => {
     console.log(uname);
     console.log(password);
 
-    switch (focusArea) {
-      case "fairShare":
-        navigate("/fairShare");
-        break;
-      case "cropInsurance":
-        navigate("/cropInsuranceXyz");
-        break;
-      default:
-        navigate("/home");
-        break;
-    }
+    // switch (focusArea) {
+    //   case "fairShare":
+    //     navigate("/fairShare");
+    //     break;
+    //   case "cropInsurance":
+    //     navigate("/cropInsuranceXyz");
+    //     break;
+    //   default:
+    //     navigate("/home");
+    //     break;
+    // }
   };
 
   return (
