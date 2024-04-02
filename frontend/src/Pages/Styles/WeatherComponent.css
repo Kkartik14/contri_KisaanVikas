@@ -13,6 +13,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     transform-style: preserve-3d;
+    background-color: #3A8FD5;
 }
 
 .forecast-box:hover {
