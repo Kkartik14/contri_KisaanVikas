@@ -10,7 +10,7 @@ const WeatherComponent = () => {
 
     useEffect(() => {
         const fetchWeatherData = async () => {
-            const apiKey = '7eb4b094900836478086d184113b24a';
+            const apiKey = '7eb4b094900836478086d184113b24a6';
             try {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(async position => {
