@@ -6,8 +6,8 @@ import Login from '../Pages/Login';
 import SignUp from '../Pages/SignUp';
 import PlantHealth from '../Pages/PlantHealth';
 import ExternalRedirect from '../Routers/PyRoute.jsx';
-import WeatherComponent from '../Pages/WeatherComponent.jsx';
 import InfoForum from '../Pages/InfoForum.jsx';
+import WeatherComponent from '../Pages/WeatherComponent.jsx';
 function App() {
  return (
     <Router>
