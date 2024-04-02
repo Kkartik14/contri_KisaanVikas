@@ -12,7 +12,7 @@ const MainPage = () => {
         <div className="navbar-links">
           <a href="#home">Home</a>
           <a href="#explore">Explore us</a>
-          <a href="#forum">Information forum</a>
+          <a href="/info">Information forum</a>
         </div>
       </nav>
       <div className="content-container">
@@ -34,7 +34,7 @@ const MainPage = () => {
       <div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 20px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease'}}>
  <div className="row g-0">
     <div className="col-md-4">
-      <img src="InfoForumHeader.png" className="img-fluid rounded-start" alt="..."/>
+      <img src="Card1.png" className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
