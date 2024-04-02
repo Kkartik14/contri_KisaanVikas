@@ -2,6 +2,7 @@ import React from 'react';
 import TurningPage from '../Components/TurningPage';
 import './Styles/MainPage.css';
 import { Link } from 'react-router-dom';
+// import Graph from '../Components/Graph';
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
           <a href="#home">Home</a>
           <a href="#here">Explore us</a>
           <a href="/info">Information forum</a>
+
         </div>
       </nav>
       <div className="content-container">
@@ -72,11 +74,11 @@ const MainPage = () => {
  </div>
 </div>
 
-<div className="card mb-3 custom-card" style={{ maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease' }}>
- <div className="row g-0">
+<div className="card mb-3 custom-card" style={{ display: 'flex', maxWidth: '700px', marginLeft: '2rem', backgroundColor: '#2DAB24', boxShadow: '0 0 10px 15px rgba(255, 255, 255, 0.5)', transition: 'background-color 0.3s ease', alignItems: 'flex-start' }}>
+ <div className="row g-0" style={{ flexGrow: '4' }}>
     <div className="col-md-4">
-    <Link to="/weather" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
+      <Link to="/weather" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <img src="Card3.png" className="img-fluid rounded-start" alt="..."/>
       </Link>
     </div>
     <div className="col-md-8">
@@ -86,6 +88,7 @@ const MainPage = () => {
       </div>
     </div>
  </div>
+ {/* <Graph /> */}
 </div>
 
 

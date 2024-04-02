@@ -86,9 +86,9 @@ const SignUp = () => {
         <source src="/LoginPage.mp4" type="video/mp4" />
       </video>
       <div className={contentContainer}>
-        <h1 className={welcomeTitle}>WELCOME TO KRISHI UNNATI</h1>
+        <h1 style={{fontWeight: 'bold'}} className={welcomeTitle}>Welcome to Kisaan Vikas!</h1>
         <p className={companyDescription}>
-          YOUR AGRO AGRO AGRO AGRO DESCRIPTION OF COMPANY
+          HARVESTING EASE, PLANTING PROSPERITY
         </p>
 
         <div className={formContainer}>
